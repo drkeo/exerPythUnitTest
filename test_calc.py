@@ -1,5 +1,5 @@
 import unittest
-import calc  # Assuming 'calc' is the module where your arithmetic functions are defined
+import calc  
 
 class TestCalc(unittest.TestCase):
 
@@ -8,7 +8,7 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(calc.add(-1, 1), 0)
         self.assertEqual(calc.add(-1, -1), -2)
 
-    def test_subtract(self):  # Corrected the function name to 'subtract'
+    def test_subtract(self): 
         self.assertEqual(calc.subtract(10, 5), 5)
         self.assertEqual(calc.subtract(-1, 1), -2)
         self.assertEqual(calc.subtract(-1, -1), 0)
